@@ -29,7 +29,10 @@ export default class FilterableProductTable extends React.Component {
                     onlyShowProductsInStock={this.state.onlyShowProductsInStock}
                     onSearchTextChange={this.handleChangeSearchText}
                     onOnlyShowProductsInStockChange={this.handleChangeOnlyShowProductsInStockChange} />
-                <ProductTable test="TEST" products={this.props.products} filterText={this.state.searchText} onlyShowProductsInStock={this.state.onlyShowProductsInStock} />
+                <ProductTable test="TEST"
+                    products={this.props.products}
+                    filterText={this.state.searchText}
+                    onlyShowProductsInStock={this.state.onlyShowProductsInStock} />
             </div>
         )
     }
